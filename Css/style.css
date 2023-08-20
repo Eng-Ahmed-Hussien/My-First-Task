@@ -1,0 +1,169 @@
+/*--------------------------------------------------------------------------------*/
+/*
+  content of Style sheet:-
+    1 - Root & All.
+    2 - common Style.
+    3 - Header-Section ( navbar ).
+    4 - left-Section ( info & social-icons ).
+    5 - Right-Section ( Image ).
+*/
+/*---------------------------------------------------------------------------------*/
+
+/*============================== Root & All Element ==========================*/
+
+:root {
+    --primarycolor: #ff274b;
+    --secondarycolor: #f7bcf7;
+    --lightcolor: #ffffff;
+    --bgcolor-1: #171a1c;
+    --bgcolor-2: #22282a;
+    --layer: #2e202146;
+}
+
+* {
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: var(--lightcolor);
+    text-transform: capitalize;
+}
+
+/*=============================================================================*/
+/*=========================== Common Class ( main ) ==========================*/
+
+ul li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+span {
+    color: var(--primarycolor);
+}
+
+.btn {
+    background-color: var(--primarycolor);
+    font-weight: 600;
+    border-radius: 30px;
+    padding: 8px 10px;
+    transition: 0.4s;
+}
+
+.btn:hover {
+    background-color: transparent;
+    border: 1px solid var(--primarycolor);
+}
+
+main {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--bgcolor-2);
+}
+
+/*===============================================================================*/
+/*=========================== Header-Section ( navbar ) =========================*/
+
+nav {
+    height: 10vh;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    background-color: var(--bgcolor-1);
+}
+
+nav h1 {
+    font-family: "Dancing Script", cursive;
+}
+
+nav ul {
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--primarycolor);
+    font-weight: 700;
+}
+
+/*===============================================================================*/
+/*=================== left-Section ( info & social-icons ) =====================*/
+
+.info {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.info h2 {
+    font-size: 2.2rem;
+    margin: 0 0 20px -30%;
+}
+
+ul li h3 {
+    line-height: 2.2rem;
+    color: var(--primarycolor);
+    font-family: monospace;
+    font-size: 1.6rem;
+}
+
+ul li span {
+    color: var(--secondarycolor);
+    margin-left: 120px;
+    line-height: 2rem;
+    font-style: italic;
+    font-size: 1.4rem;
+}
+
+.social {
+    height: 10vh;
+    width: 60%;
+    margin-left: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.social a {
+    padding: 12px 18px;
+    font-size: 18px;
+}
+
+/*===============================================================================*/
+/*=========================== Right-Section ( Image ) ==========================*/
+
+.right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+}
+
+.mypic {
+    width: 40%;
+    height: 60%;
+    margin: auto;
+    border-radius: 3vh;
+    overflow: hidden;
+    background-image: url(../images/moody.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.layer {
+    height: 100%;
+    background-color: var(--layer);
+}
+
+/*===============================================================================*/
